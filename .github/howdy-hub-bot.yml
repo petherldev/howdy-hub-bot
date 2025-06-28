@@ -1,0 +1,12 @@
+welcome:
+  first_time_issue: "👋 Howdy, **{{author}}**, thanks for opening your first issue!"
+  returning_issue: "Welcome back **{{author}}**! Thanks for your continued contributions!"
+  first_time_pr: "🎉 Your first pull request is appreciated, **{{author}}**!"
+  returning_pr: "🤠 You're awesome, **{{author}}**, thanks for another PR!"
+labels:
+  issues: ["needs-triage"]
+  prs: ["awaiting-review"]
+autoCloseOnTitleContains: "complete"
+autoAssignAuthor: true
+autoUnassignIfRemoved: true
+syncAssigneesWithReviewers: true
