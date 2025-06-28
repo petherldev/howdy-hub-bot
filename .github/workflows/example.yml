@@ -1,0 +1,35 @@
+name: 🤖 Howdy‑Hub Bot
+
+on:
+  # 1. Manual run from GitHub UI
+  workflow_dispatch:
+
+  # 2. Weekly check (e.g. for stale issues or reminders)
+  schedule:
+    - cron: "0 9 * * 1" # Every Monday at 09:00 UTC
+
+  # 3. Trigger on new or reopened issues and PRs
+  issues:
+    types: [opened, reopened]
+  pull_request:
+    types: [opened, reopened, ready_for_review]
+
+permissions:
+  issues: write # Needed to comment, label, assign on issues
+  pull-requests: write # Needed to comment, label, assign PRs, manage reviewers
+  contents: read # Required for config file access
+
+jobs:
+  howdy:
+    name: 🐴 Run Howdy-Hub Bot
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout
+        uses: actions/checkout@v4
+
+      - name: 🤠 Howdy‑Hub Bot
+        uses: petherldev/howdy-hub-bot@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          # config-path: ".github/howdy-hub-bot.yml" # optional; omit if using default
