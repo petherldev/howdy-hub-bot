@@ -1,0 +1,17 @@
+name: "Howdy‑Hub Bot"
+description: "Welcome & workflow automation for issues and pull requests."
+author: "petherldev"
+inputs:
+  repo-token:
+    description: "GitHub token (defaults to GITHUB_TOKEN)"
+    required: false
+  config-path:
+    description: "Custom config file path"
+    required: false
+    default: ".github/howdy-hub-bot.yml"
+runs:
+  using: "node20"
+  main: "dist/index.js"
+branding:
+  icon: "smile"
+  color: "yellow"
