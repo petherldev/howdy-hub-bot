@@ -115,10 +115,10 @@ npm test                   # run Jest unit tests
 
 | Topic                          | Link                                                                                                                                                                       |
 | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| JavaScript actions toolkit     | [https://docs.github.com/actions/creating-actions/creating-a-javascript-action](https://docs.github.com/actions/creating-actions/creating-a-javascript-action)             |
-| Using **@vercel/ncc**          | [https://github.com/vercel/ncc](https://github.com/vercel/ncc)                                                                                                             |
-| Metadata (`action.yml`) schema | [https://docs.github.com/actions/creating-actions/metadata-syntax-for-github-actions](https://docs.github.com/actions/creating-actions/metadata-syntax-for-github-actions) |
-| Workflow syntax                | [https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions](https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions)   |
+| JavaScript actions toolkit     | [Let's Read](https://docs.github.com/actions/creating-actions/creating-a-javascript-action)             |
+| Using **@vercel/ncc**          | [Let's Read](https://github.com/vercel/ncc)                                                                                                             |
+| Metadata (`action.yml`) schema | [Let's Read](https://docs.github.com/actions/creating-actions/metadata-syntax-for-github-actions) |
+| Workflow syntax                | [Let's Read](https://docs.github.com/actions/using-workflows/workflow-syntax-for-github-actions)   |
 
 ## Roadmap
 
